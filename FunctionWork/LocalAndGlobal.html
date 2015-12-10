@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html>  
+    <head>
+    
+    </head>
+    <body>
+    
+        <script type="text/javascript">
+            //Global Status
+            var g1 = 28;
+            var g2 = "Final";
+            
+            function localVar()
+            {
+                //local status
+                var l1 = 88;
+                document.write(g2 + l1);
+                modifyVar(" Chew is bad for you ");
+            }
+            
+            function modifyVar(x)
+            {
+                g1 = x;
+            }
+            
+            localVar();
+            document.write(g1);
+        </script>
+        
+    </body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html>  
+    <head>
+    
+    </head>
+    <body>
+    
+        <script type="text/javascript">
+            function fun1()
+            {
+                document.write("This is the first line");
+            }
+            
+            function fun2(x)
+            {
+                x = x + 2;
+                return fun3(x, 5)
+            }
+            
+            function fun3(x, y)
+            {
+                var a = x + y;
+                return a;
+            }
+            
+            function start()
+            {
+                fun1();
+                document.write(fun2(3));
+                
+            }
+            
+            start();
+        </script>
+        
+    </body>
+</html>
