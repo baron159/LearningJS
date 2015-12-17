@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html>  
+    <head>
+    
+        <script type="text/javascript">
+            function person(name, age)
+            {
+                this.name = name;
+                this.age = age;
+                this.yearUntil = UntilYouCanDrink;
+                this.ManageAge = modifyAge;
+            }
+            
+            function UntilYouCanDrink()
+            {
+                var year = 21 - this.age;
+                return year;
+            }
+            
+            function modifyAge(ag)
+            {
+                this.age = ag;
+            }
+            
+            var shiggy = new person("Shiggy", 19);
+            
+        </script>
+    </head>
+    <body>
+    
+        <script type="text/javascript">
+            document.write(shiggy.name + " can drink in: " + shiggy.yearUntil() + " Years </br>");
+            document.write("Fastward </br>");
+            shiggy.ManageAge(22);
+            document.write(shiggy.age);
+        </script>
+        
+    </body>
+</html>
