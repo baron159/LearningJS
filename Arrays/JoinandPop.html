@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html>  
+    <head>
+    
+    </head>
+    <body>
+    
+        <script type="text/javascript">
+            var people = new Array("Scott", "Ryan", "Mom", "Dad");
+            //Basic join mehtod
+            var list = people.join();
+            //Changes the symbol that divides that elements
+            var dlist = people.join(" - ");
+            
+            var numList = new Array();
+            for(x = 0; x < 10; x++)
+            {
+                //Generate random number between 1 and 100
+                numList[x] = Math.floor((Math.random() *100) + 1);
+            }
+            document.write(numList.join() + "</br>");
+            numList.sort();
+            document.write(numList.join() + "</br>");
+            for(x = 10; x < 15; x++)
+            {
+                numList[x] = Math.floor((Math.random() *100) + 1);
+            }
+            document.write(numList.join() + "</br>");
+            
+            document.write(list + "</br>");
+            document.write(dlist + "</br>");
+            document.write(people[3] + "</br>");
+            //Pops off the last element of the array
+            people.pop();
+            document.write(people[3] + "</br>");
+
+        </script>
+        
+    </body>
+</html>

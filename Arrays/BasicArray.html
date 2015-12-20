@@ -7,8 +7,36 @@
     <body>
     
         <script type="text/javascript">
+            //Array with Elements
             var people = new Array("Scott", "Shiggy", "Nelly", "Jobi");
-            document.write(people[0] + " " + people[3]);
+            //Array and size
+            var laptops = new Array(3);
+            laptops[0] = "Linux Dell";
+            laptops[1] = "2012 MacBook";
+            laptops[2] = "2008 MacBook";
+            
+            //Two Dem Array
+            var table = new Array(3, 3);
+            table[0,0] = 0;
+            table[0,1] = 1;
+            table[2,1] = 2;
+            
+            //Dynamic Array Creation
+            var dyn = new Array();
+            dyn[0] = "First";
+            dyn[1] = "Second";
+            dyn[2] = "Third";
+            //This is a prompt to add the fourth element
+            dyn[3] = prompt("Enter Text Below:", "");
+            
+            //This is ether a three dem array or a way to load numbers into aray
+            var test = new Array(23, 34, 72);
+            
+            document.write(people[0] + " " + people[3] + "</br>");
+            document.write(laptops[1] + "</br>");
+            document.write(table[2,1] + "</br>");
+            document.write(dyn.length + " " + dyn[3] + "</br>");
+            document.write(test[2] + "</br>");
         </script>
         
     </body>
