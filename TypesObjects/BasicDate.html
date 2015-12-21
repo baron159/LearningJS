@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+
+<html>  
+    <head>
+    
+    </head>
+    <body>
+    
+        <script type="text/javascript">
+            function printTime()
+            {
+                var now = new Date();
+                var h = now.getHours();
+                var m = now.getMinutes();
+                var s = now.getSeconds();
+                var mm = now.getMilliseconds();
+                
+                document.write(h + " : " + m + " : " + s + "</br>");
+            }
+            setInterval("printTime()", 1000);
+        </script>
+        
+    </body>
+</html>
